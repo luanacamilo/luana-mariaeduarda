@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Programação de Filmes</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>🎬 Programação de Filmes</h1>
+  </header>
+    <nav class="navbar">
+    <button class="menu-menor" id="menu-menor">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Filmes</a></li>
+      <li><a href="#">Programação</a></li>
+      <li><a href="#">Ingressos</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+  <main class="filmes-container">
+    <div class="filme-card">
+      <img src="https://via.placeholder.com/200x300.png?text=Filme+1" alt="Pôster do Filme 1">
+      <h2>Oppenheimer</h2>
+      <p>Horários: 14:00 | 16:30 | 19:00</p>
+      <a href="#" class="btn">Comprar Ingresso</a>
+    </div>
+
+    <div class="filme-card">
+      <img src="https://via.placeholder.com/200x300.png?text=Filme+2" alt="Pôster do Filme 2">
+      <h2>Barbie</h2>
+      <p>Horários: 15:00 | 18:00 | 21:00</p>
+      <a href="#" class="btn">Comprar Ingresso</a>
+    </div>
+
+    <div class="filme-card">
+      <img src="https://via.placeholder.com/200x300.png?text=Filme+3" alt="Pôster do Filme 3">
+      <h2>Clube da Luta</h2>
+      <p>Horários: 13:30 | 17:00 | 20:30</p>
+      <a href="#" class="btn">Comprar Ingresso</a>
+    </div>
+    <div class="filme-card">
+      <img src="https://via.placeholder.com/200x300.png?text=Filme+3" alt="Pôster do Filme 4">
+      <h2>Interestelar </h2>
+      <p>Horários: 14:00 | 17:30 | 22:30</p>
+      <a href="#" class="btn">Comprar Ingresso</a>
+    </div>
+    <div class="filme-card">
+      <img src="https://via.placeholder.com/200x300.png?text=Filme+3" alt="Pôster do Filme 5">
+      <h2>Um Filme Minecraft</h2>
+      <p>Horários: 13:00 | 18:30 | 21:30</p>
+      <a href="#" class="btn">Comprar Ingresso</a>
+    </div>
+ 
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Projeto Desenvolvimento Web - Feito por Luana Alves Camilo e Maria Eduarda Chaves Vieira</p>
+  </footer>
+
+    <script>
+    const toggle = document.getElementById('menu-menor');
+    const navLinks = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
