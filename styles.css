@@ -29,9 +29,9 @@ header {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  width: 1000px; 
+  width: 500px; 
   /* inicial: width 200 e height 200 */
-  height: 300px;
+  height: 200px;
   text-align: left;
   padding: 15px;
   transition: transform 0.2s;
@@ -39,17 +39,19 @@ header {
 
 .filme-card:hover {
   transform: scale(1.03);
+  
 }
 
 .filme-card img {
   border-radius: 5px;
-  width: 100%;
+  width: 100px;
   height: auto;
 }
 
 .filme-card h2 {
   margin: 10px 0 5px;
   font-size: 18px;
+
 }
 
 .filme-card p {
@@ -141,6 +143,10 @@ footer {
   background-color: #222;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   margin-top: 40px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
+
