@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação de Filmes</title>
+    <link rel="stylesheet" href="style-contato.css">
+</head>
+<body>
+    <header>
+     <h1>🎬 FamCine</h1>
+    </header>
+
+    <nav class="navbar">
+     <button class="menu-menor" id="menu-menor">☰</button>
+     <ul class="nav-links" id="nav-links">
+       <li><a href="inicio.html">Início</a></li>
+       <li><a href="filmes.html">Filmes</a></li>
+       <li><a href="#">Contato</a></li>
+     </ul>
+    </nav>  
+
+    <section class="contato">
+    <div class="contato-container">
+     <h2>Entre em Contato</h2>
+    
+     <form class="formulario-contato" action="#" method="post">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+     </form>
+
+     <div class="criadores">
+      <h3>Sobre as Criadoras</h3>
+      <p>Este site foi desenvolvido por <strong>Luana Alves Camilo</strong> e <strong>Maria Eduarda Chaves Vieira</strong>, estudantes do curso Ciência da Computação na Faculdade de Americana. O projeto faz parte de um trabalho da matéria Desenvolvimento Web com o objetivo de unir criatividade e funcionalidade.</p>
+     </div>
+    </div>
+    </section>
+
+  <footer>
+    <p>&copy; 2025 Projeto Desenvolvimento Web - Feito por 
+      <a class="github" href="https://github.com/luanacamilo" target="_blank">Luana Alves Camilo</a> e 
+      <a class="github" href="#" target="_blank">Maria Eduarda Chaves Vieira</a>
+    </p>
+  </footer>
+
+   <script>
+    const toggle = document.getElementById('menu-menor');
+    const navLinks = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+     navLinks.classList.toggle('active');
+    });
+  </script>
+    
+</body>
+</html>

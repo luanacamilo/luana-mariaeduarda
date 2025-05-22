@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Programação de Filmes</title>
+  <link rel="stylesheet" href="style-inicio.css"/>
+</head>
+<body>
+  <header>
+    <h1>🎬 FamCine</h1>
+  </header>
+
+  <nav class="navbar">
+    <button class="menu-menor" id="menu-menor">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#">Início</a></li>
+      <li><a href="filmes.html">Filmes</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main class="filmes-container">
+    <div class="filme-card">
+      <img src="imagens/71xDtUSyAKL.jpg" alt="Pôster do Filme Oppenheimer">
+      <div>
+        <h2>Oppenheimer</h2>
+        <p>Horários: 14:00 | 16:30 | 19:00</p>
+        <a href="#" class="btn">Comprar Ingresso</a>
+      </div>
+    </div>
+
+    <div class="filme-card">
+      <img src="imagens/cartaz-filme-barbie.jpeg" alt="Pôster do Filme Barbie">
+      <div>
+        <h2>Barbie</h2>
+        <p>Horários: 15:00 | 18:00 | 21:00</p>
+        <a href="#" class="btn">Comprar Ingresso</a>
+      </div>
+    </div>
+
+    <div class="filme-card">
+      <img src="imagens/jogos-vorazes.jpeg" alt="Pôster do Filme Jogos Vorazes">
+      <div>
+        <h2>Jogos Vorazes: Em Chamas</h2>
+        <p>Horários: 13:30 | 17:00 | 20:30</p>
+        <a href="#" class="btn">Comprar Ingresso</a>
+      </div>
+    </div>
+
+    <div class="filme-card">
+      <img src="imagens/pos-01875-85bc65a11d5aeb4efe17181254764753-480-0.jpg" alt="Pôster do Filme Interestelar">
+      <div>
+        <h2>Interestelar</h2>
+        <p>Horários: 14:00 | 17:30 | 22:30</p>
+        <a href="#" class="btn">Comprar Ingresso</a>
+      </div>
+    </div>
+
+    <div class="filme-card">
+      <img src="imagens/um-filme-minecraft-posterportrait.webp" alt="Pôster do Filme Minecraft">
+      <div>
+        <h2>Um Filme Minecraft</h2>
+        <p>Horários: 13:00 | 18:30 | 21:30</p>
+        <a href="#" class="btn">Comprar Ingresso</a>
+      </div>
+    </div>
+
+    <div class="filme-card">
+      <img src="imagens/images.jpeg" alt="Pôster do Filme Premonição 6">
+      <div>
+        <h2>Premonição 6: Laços de Sangue</h2>
+        <p>Horários: 16:00 | 18:30 | 22:00</p>
+        <a href="#" class="btn">Comprar Ingresso</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Projeto Desenvolvimento Web - Feito por 
+      <a class="github" href="https://github.com/luanacamilo" target="_blank">Luana Alves Camilo</a> e 
+      <a class="github" href="#" target="_blank">Maria Eduarda Chaves Vieira</a>
+    </p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-menor');
+    const navLinks = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
